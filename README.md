@@ -16,6 +16,8 @@ https://docs.google.com/document/d/1lOn_J1iXlYxDWzlbg1sJbCuEFBXIf8CK4od1crOZC5k/
 ## Week 7
 This README serves as a checklist to keep track of the ongoing development tasks.
 
+storyboard: https://docs.google.com/document/d/15td3KsTHuYZYgV7nrKyFIwIBLGu1jG4bIIWo6zvv3RM/edit?usp=sharing
+
 video week 7: https://youtu.be/5Gn3-uwrls8?si=IsccHmvNRxSNlXcE
 
 ## Weapon Models
