@@ -42,13 +42,13 @@ video week 7: https://youtu.be/5Gn3-uwrls8?si=IsccHmvNRxSNlXcE
 - [ ] Integration into the game engine
 
 ### 5. Hammer
-- [ ] Model design completed
-- [ ] Textures applied
+- [x] Model design completed
+- [x] Textures applied
 - [ ] Integration into the game engine
 
 ### 6. Daggers
-- [ ] Model design completed
-- [ ] Textures applied
+- [x] Model design completed
+- [x] Textures applied
 - [ ] Integration into the game engine
 
 
