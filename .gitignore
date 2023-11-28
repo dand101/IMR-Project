@@ -71,3 +71,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 /Packages/com.ptc.vuforia.engine-10.18.4.tgz
+IMRProject/Assets/BrokenVector.meta
+IMRProject/Assets/BrokenVector/LowPolyRockPack/Materials/Green.mat
+IMRProject/Assets/BrokenVector/LowPolyRockPack/Materials/Sand.mat
