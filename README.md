@@ -39,8 +39,8 @@ video week 7: https://youtu.be/5Gn3-uwrls8?si=IsccHmvNRxSNlXcE
 - [X] Integration into the game engine
 
 ### 4. Shield
-- [ ] Model design completed
-- [ ] Textures applied
+- [X] Model design completed
+- [X] Textures applied
 - [ ] Integration into the game engine
 
 ### 5. Hammer
@@ -57,7 +57,7 @@ video week 7: https://youtu.be/5Gn3-uwrls8?si=IsccHmvNRxSNlXcE
 ## Player Hands
 
 ### 1. Hand
-- [ ] Model design completed
+- [X] Model design completed
 - [ ] Textures applied
 - [ ] Rigging and animation finalized
 - [ ] Integration into the game engine
@@ -73,7 +73,7 @@ video week 7: https://youtu.be/5Gn3-uwrls8?si=IsccHmvNRxSNlXcE
 ## UI
 
 ### 1. Main Menu
-- [ ] Design and layout finalized
+- [X] Design and layout finalized
 
 ### 2. In-Game HUD
 - [ ] Health, Objectives
