@@ -43,7 +43,7 @@ video week 7: https://youtu.be/5Gn3-uwrls8?si=IsccHmvNRxSNlXcE
 - Started designing states for the various rooms.
 - Employed Scriptable Objects for defining and displaying objectives in each room.
 
-video : https://youtu.be/uvC4e1y1740
+video weapon interaction: https://youtu.be/uvC4e1y1740
 
 
 ## Weapon Models
