@@ -1,5 +1,8 @@
 # IMR-Project
 
+This README serves as a checklist to keep track of the ongoing development tasks.
+
+
 ## Echipa
 Cohman Teodora B5
 
@@ -14,11 +17,34 @@ https://docs.google.com/document/d/1ndM_B80YUjZcQ-5TuU0tBR_--lyisvr0g-LX-39BHoQ/
 https://docs.google.com/document/d/1lOn_J1iXlYxDWzlbg1sJbCuEFBXIf8CK4od1crOZC5k/edit#heading=h.p6xmxd72eeyg
 
 ## Week 7
-This README serves as a checklist to keep track of the ongoing development tasks.
 
 storyboard: https://docs.google.com/document/d/15td3KsTHuYZYgV7nrKyFIwIBLGu1jG4bIIWo6zvv3RM/edit?usp=sharing
 
 video week 7: https://youtu.be/5Gn3-uwrls8?si=IsccHmvNRxSNlXcE
+
+
+## Progress Week 10
+
+### VR Rig Movement and Enviroment Interaction
+
+- Implemented VR rig for player movement.
+- Implemented VR hands model with animations
+- Environment Collision: Configured the VR rig to prevent passing through walls.
+
+### Weapon System and Interaction
+
+- Started implementing the weapon system.
+- Started interaction for some weapons, grabbing and manipulating them in VR.
+- Utilized Scriptable Objects to store data for each weapon.
+
+### Room State Machine
+
+- Initiated the development of a room state machine.
+- Started designing states for the various rooms.
+- Employed Scriptable Objects for defining and displaying objectives in each room.
+
+video : https://youtu.be/uvC4e1y1740
+
 
 ## Weapon Models
 
@@ -51,7 +77,7 @@ video week 7: https://youtu.be/5Gn3-uwrls8?si=IsccHmvNRxSNlXcE
 ### 6. Daggers
 - [x] Model design completed
 - [x] Textures applied
-- [ ] Integration into the game engine
+- [X] Integration into the game engine
 
 
 ## Player Hands
