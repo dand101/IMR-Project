@@ -11,10 +11,8 @@ public class WeaponCollide : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("COLL");
         if (other.CompareTag("Weapon"))
         {
-            Debug.Log("LALALA");
             TriggerDeath();
         }
     }
