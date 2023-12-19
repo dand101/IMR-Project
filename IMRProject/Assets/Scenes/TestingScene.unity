@@ -1283,6 +1283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5795451162738332395, guid: e6d9d08f218cf6242b82afcb7dbf811e, type: 3}
+      propertyPath: m_CameraYOffset
+      value: 1.7
+      objectReference: {fileID: 0}
     - target: {fileID: 6523297453055259550, guid: e6d9d08f218cf6242b82afcb7dbf811e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.2
@@ -1521,6 +1525,10 @@ PrefabInstance:
     - target: {fileID: 6337113015689213386, guid: 93335922feed2654fa5633cbb28ed179, type: 3}
       propertyPath: m_Name
       value: HammerObj
+      objectReference: {fileID: 0}
+    - target: {fileID: 7671214393969680121, guid: 93335922feed2654fa5633cbb28ed179, type: 3}
+      propertyPath: m_Size.x
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
