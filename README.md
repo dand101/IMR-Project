@@ -46,6 +46,15 @@ video week 7: https://youtu.be/5Gn3-uwrls8?si=IsccHmvNRxSNlXcE
 video weapon interaction: https://youtu.be/uvC4e1y1740
 
 
+## Progress Week 11
+
+- scaled the dungeon enviroment
+- added interaction for more weapons
+- added objectives for rooms
+- added interactable doors
+
+video: https://youtu.be/pSTHsQtmvRg
+
 ## Weapon Models
 
 ### 1. Crossbow
