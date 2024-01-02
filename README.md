@@ -55,6 +55,15 @@ video weapon interaction: https://youtu.be/uvC4e1y1740
 
 video: https://youtu.be/pSTHsQtmvRg
 
+## Progress Week 12
+
+- added enemy ai
+- added interaction with enemies with the weapons
+- started adding enemy dismemberment
+- started crossbow interaction 
+
+video: https://youtu.be/eUBKMDBjLhw
+
 ## Weapon Models
 
 ### 1. Crossbow
@@ -71,17 +80,17 @@ video: https://youtu.be/pSTHsQtmvRg
 ### 3. Mace
 - [X] Model design completed
 - [X] Textures applied
-- [X] Integration into the game engine
+- [ ] Integration into the game engine
 
 ### 4. Shield
 - [X] Model design completed
 - [X] Textures applied
-- [ ] Integration into the game engine
+- [x] Integration into the game engine
 
 ### 5. Hammer
 - [x] Model design completed
 - [x] Textures applied
-- [ ] Integration into the game engine
+- [x] Integration into the game engine
 
 ### 6. Daggers
 - [x] Model design completed
@@ -94,8 +103,8 @@ video: https://youtu.be/pSTHsQtmvRg
 ### 1. Hand
 - [X] Model design completed
 - [x] Textures applied
-- [ ] Rigging and animation finalized
-- [ ] Integration into the game engine
+- [x] Rigging and animation finalized
+- [x] Integration into the game engine
 
 
 ## Rooms
