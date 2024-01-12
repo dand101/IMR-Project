@@ -7,6 +7,10 @@ TagManager:
   - RightHand
   - LeftHand
   - Weapon
+  - dagger
+  - target1
+  - target2
+  - target3
   layers:
   - Default
   - TransparentFX
