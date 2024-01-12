@@ -64,6 +64,18 @@ video: https://youtu.be/pSTHsQtmvRg
 
 video: https://youtu.be/eUBKMDBjLhw
 
+
+## Progress Week 13
+
+- progress on enemy ai
+- added shield functionality
+- added player health
+- enemy dismemberment completed
+- added working doors with keys
+- added the daggers minigame
+
+video: https://youtu.be/-rOfCvFavKg
+
 ## Weapon Models
 
 ### 1. Crossbow

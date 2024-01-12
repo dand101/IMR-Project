@@ -7,6 +7,11 @@ TagManager:
   - RightHand
   - LeftHand
   - Weapon
+  - Key
+  - Door
+  - Barrier
+  - GuardWeapon
+  - Shield
   layers:
   - Default
   - TransparentFX
@@ -18,8 +23,8 @@ TagManager:
   - Floor
   - Walls
   - Weapon
-  - 
-  - 
+  - Barriers
+  - Obstacle
   - 
   - 
   - 

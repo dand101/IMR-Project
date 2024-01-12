@@ -50,20 +50,112 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2498160877226221617, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
       propertyPath: m_Name
-      value: Human Variant
+      value: GuardEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2541672254679900391, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2541774702582576705, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2541785940949446227, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2541889822527357117, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542028375235480749, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542038683094117455, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542125760087066399, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542138347079480631, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542157712485660395, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542325423196157929, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542366731461112157, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542483621772960315, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542564664390826989, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2593319889063680359, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 36159b2ce468d9a4b85446b4a257c259, type: 2}
+    - target: {fileID: 3000072882835082309, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: bloodPrefab
+      value: 
+      objectReference: {fileID: 3548588485384254792, guid: 2f9e7dc163581394da1e00b561eed65d, type: 3}
+    - target: {fileID: 3000072882835082309, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: detachedLimbPref
+      value: 
+      objectReference: {fileID: 3478803358525413629, guid: 34c358c765d24eb43a582e91d7b50330, type: 3}
+    - target: {fileID: 3633110039273869128, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: bloodPrefab
+      value: 
+      objectReference: {fileID: 3548588485384254792, guid: 2f9e7dc163581394da1e00b561eed65d, type: 3}
+    - target: {fileID: 3633110039273869128, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: detachedLimbPref
+      value: 
+      objectReference: {fileID: 8130110682138559146, guid: f2c7b4264bd9dd6469713b645498d26c, type: 3}
+    - target: {fileID: 4596931016825765651, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: bloodPrefab
+      value: 
+      objectReference: {fileID: 3548588485384254792, guid: 2f9e7dc163581394da1e00b561eed65d, type: 3}
+    - target: {fileID: 4596931016825765651, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: detachedLimbPref
+      value: 
+      objectReference: {fileID: 7773223371614928150, guid: 98f7a63b847d80e45b6dc721f68ef2bf, type: 3}
+    - target: {fileID: 6869462981221440217, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: bloodScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6869462981221440217, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: bloodPrefab
+      value: 
+      objectReference: {fileID: 3548588485384254792, guid: 2f9e7dc163581394da1e00b561eed65d, type: 3}
     - target: {fileID: 6869462981221440217, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
       propertyPath: detachedLimbPref
       value: 
-      objectReference: {fileID: 4499110307354059794, guid: 2544433239abec649a21f9c3d1bf5835, type: 3}
+      objectReference: {fileID: 3243381336109308167, guid: b3d5d63fcd67c204381965acd03d1b8d, type: 3}
     - target: {fileID: 6869462981221440217, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
       propertyPath: spawnPositionReference
       value: 
-      objectReference: {fileID: 3521725162544489515}
+      objectReference: {fileID: 3521387472862726575}
+    - target: {fileID: 7697875311968124778, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: bloodPrefab
+      value: 
+      objectReference: {fileID: 3548588485384254792, guid: 2f9e7dc163581394da1e00b561eed65d, type: 3}
+    - target: {fileID: 7697875311968124778, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      propertyPath: detachedLimbPref
+      value: 
+      objectReference: {fileID: 7414310425295242419, guid: 04458a05172617b41b4cb75a77c82833, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -100,6 +192,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detachedLimbPref: {fileID: 0}
   spawnPositionReference: {fileID: 0}
+  bloodPrefab: {fileID: 0}
+  bloodScale: 0
+--- !u!1 &3521387472862726575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2498284241935476983, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+  m_PrefabInstance: {fileID: 1330192980291314008}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3521405216876626281 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2498160877226221617, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
@@ -118,7 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaseDistance: 10
-  attackDistance: 2
+  attackDistance: 3
 --- !u!195 &977964834296676890
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -160,8 +259,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detachedLimbPref: {fileID: 0}
   spawnPositionReference: {fileID: 0}
---- !u!1 &3521725162544489515 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2497920095322342771, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
-  m_PrefabInstance: {fileID: 1330192980291314008}
-  m_PrefabAsset: {fileID: 0}
+  bloodPrefab: {fileID: 0}
+  bloodScale: 0

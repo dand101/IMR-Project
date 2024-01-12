@@ -8,7 +8,9 @@ public class Limb : MonoBehaviour
 
     public GameObject detachedLimbPref;
     public GameObject spawnPositionReference;
+    public GameObject bloodPrefab;
     private bool hasBeenHit = false;
+    public float bloodScale = 0.5f;
 
     public event Action OnHitByWeapon;
 
@@ -22,13 +24,22 @@ public class Limb : MonoBehaviour
 
 
             Rigidbody detachedLimbRigidbody = detachedLimb.AddComponent<Rigidbody>();
-            detachedLimb.AddComponent<BoxCollider>(); 
+            //detachedLimb.AddComponent<BoxCollider>(); 
             if (detachedLimbRigidbody != null)
             {
                 //detachedLimbRigidbody.AddForce(Vector3.forward * 1.5f, ForceMode.Impulse);
-
                 detachedLimbRigidbody.useGravity = true;
             }
+
+            if (bloodPrefab != null)
+            {
+                GameObject bloodEffect = Instantiate(bloodPrefab, spawnPositionReference.transform.position, Quaternion.identity);
+
+                var mainModule = bloodEffect.GetComponent<ParticleSystem>().main;
+
+                mainModule.startSizeMultiplier *= bloodScale;
+            }
+
 
             // gameObject.SetActive(false);
             transform.localScale = Vector3.zero;

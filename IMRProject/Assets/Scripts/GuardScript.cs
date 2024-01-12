@@ -10,8 +10,11 @@ public class GuardScript : MonoBehaviour
         Idle,
         Chasing,
         Attacking,
+        Blocked,
         Dead
     }
+
+    public Collider guardWeaponCollider;
 
 
     private bool ragdollActivated = false;
@@ -20,9 +23,11 @@ public class GuardScript : MonoBehaviour
     private CharacterController characterController;
     private Animator animator;
     private Transform player;
+    private NavMeshAgent navigationAgent;
 
     public float chaseDistance = 10f;
-    public float attackDistance = 4f;
+    public float attackDistance = 2f;
+    
 
     void Start()
     {
@@ -30,6 +35,7 @@ public class GuardScript : MonoBehaviour
         animator = GetComponent<Animator>();
 
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        navigationAgent = GetComponent<NavMeshAgent>();
 
         Limb[] limbs = GetComponentsInChildren<Limb>();
         foreach (Limb limb in limbs)
@@ -96,8 +102,10 @@ public class GuardScript : MonoBehaviour
     }
 
     void Update()
-    {   
-        if(ragdollActivated == false)
+    {
+        //transform.LookAt(player.position);
+
+        if (ragdollActivated == false)
         {
             switch (currentState)
             {
@@ -106,11 +114,17 @@ public class GuardScript : MonoBehaviour
                     break;
 
                 case GuardState.Chasing:
+                    //Debug.Log("chasing");
                     UpdateChasingState();
                     break;
 
                 case GuardState.Attacking:
+                    //Debug.Log("attac");
                     UpdateAttackingState();
+                    break;
+
+                case GuardState.Blocked:
+                    UpdateBlockingState();
                     break;
 
                 case GuardState.Dead:
@@ -125,32 +139,51 @@ public class GuardScript : MonoBehaviour
         animator.ResetTrigger("isAttacking");
         animator.SetTrigger("isChasing");
         animator.enabled = false;
-        NavMeshAgent agent = GetComponent<NavMeshAgent>();
-        if (agent != null)
+
+        navigationAgent.isStopped = true;
+    }
+    bool CanSeePlayer()
+    {
+        Vector3 directionToPlayer = player.position - transform.position;
+        float distanceToPlayer = directionToPlayer.magnitude;
+
+        Ray ray = new Ray(transform.position, directionToPlayer.normalized);
+
+        int layerMask = LayerMask.GetMask("Obstacle");
+
+        if (Physics.Raycast(ray, distanceToPlayer, layerMask))
         {
-            agent.isStopped = true;
+            return false;
         }
+
+        return true;
     }
 
     void UpdateIdleState()
     {
-
+        //transform.LookAt(player.position);
         //Debug.Log(Vector3.Distance(transform.position, player.position));
-        if (Vector3.Distance(transform.position, player.position) < chaseDistance)
+        bool canSeePlayer = CanSeePlayer();
+
+        if (Vector3.Distance(transform.position, player.position) < chaseDistance && canSeePlayer)
         {
             currentState = GuardState.Chasing;
         }
     }
 
-
+ 
     void UpdateChasingState()
     {
-        //Debug.Log("Chase");
-        animator.SetTrigger("isChasing");
-        NavMeshAgent agent = GetComponent<NavMeshAgent>();
-        if (agent != null)
+        navigationAgent.isStopped = false;
+        animator.SetBool("isChase", true);
+        navigationAgent.SetDestination(player.position);
+
+        bool canSeePlayer = CanSeePlayer();
+        if (!canSeePlayer)
         {
-            agent.SetDestination(player.position);
+            animator.SetBool("isChase", false);
+            navigationAgent.isStopped = true;
+            currentState = GuardState.Idle;
         }
 
         if (Vector3.Distance(transform.position, player.position) < attackDistance)
@@ -159,39 +192,69 @@ public class GuardScript : MonoBehaviour
         }
     }
 
+    
+
     void UpdateAttackingState()
     {
-        NavMeshAgent agent = GetComponent<NavMeshAgent>();
-        if (agent != null)
+        transform.LookAt(player.position);
+        //Debug.Log("Stop");
+        navigationAgent.isStopped = true;
+        animator.SetBool("isChase", false);
+
+
+
+        animator.SetBool("isAttack",true);
+
+        if (IsAttackBlocked())
         {
-            agent.isStopped = true;
+            animator.SetTrigger("Blocked");
+            animator.SetBool("isAttack", false);
+            currentState = GuardState.Blocked;
         }
 
-        animator.SetTrigger("isAttacking");
-
-        StartCoroutine(TransitionToChasing(2f));
-    }
-
-    IEnumerator TransitionToChasing(float waitTime)
-    {
-        yield return new WaitForSeconds(waitTime);
-
-        NavMeshAgent agent = GetComponent<NavMeshAgent>();
-        if (agent != null)
+        if (Vector3.Distance(transform.position, player.position) < attackDistance)
         {
-            agent.isStopped = false;
-        }
-
-        animator.ResetTrigger("isAttacking");
-        animator.SetTrigger("isChasing");
-
-        yield return new WaitForSeconds(0.5f);
-
-        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+            currentState = GuardState.Attacking;
+            //animator.ResetTrigger("isAttacking");
+        } else
         {
-            animator.ResetTrigger("isChasing");
-
+            animator.SetBool("isAttack", false);
+            //StartCoroutine(TransitionToChasing(2f));
             currentState = GuardState.Chasing;
         }
     }
+
+    bool IsAttackBlocked()
+    {
+        Collider[] colliders = Physics.OverlapBox(
+            guardWeaponCollider.bounds.center,
+            guardWeaponCollider.bounds.extents,
+            guardWeaponCollider.transform.rotation
+        );
+
+        foreach (var collider in colliders)
+        {
+            if (collider.CompareTag("Shield"))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+
+    void UpdateBlockingState()
+    {
+
+        if (Vector3.Distance(transform.position, player.position) < attackDistance)
+        {
+            currentState = GuardState.Attacking;
+        }
+        else
+        {
+            currentState = GuardState.Chasing;
+        }
+    }
+
 }
