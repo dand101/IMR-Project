@@ -12,6 +12,10 @@ TagManager:
   - Barrier
   - GuardWeapon
   - Shield
+  - dagger
+  - target1
+  - target2
+  - target3
   layers:
   - Default
   - TransparentFX
