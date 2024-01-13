@@ -16,6 +16,9 @@ TagManager:
   - target1
   - target2
   - target3
+  - CellDoor
+  - KeyAttach
+  - Chain
   layers:
   - Default
   - TransparentFX

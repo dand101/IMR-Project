@@ -3,7 +3,7 @@ using UnityEngine;
 public class LockedDoor : MonoBehaviour
 {
     public int doorNumber;  // Unique identifier for the door
-    private bool isLocked = true;
+    public bool isLocked = true;
     public GameObject barrier;
     private Rigidbody doorRigidbody;
 
@@ -25,6 +25,13 @@ public class LockedDoor : MonoBehaviour
         {
             barrier.SetActive(true);
         }
+
+        if (isLocked == false)
+        {
+            Destroy(barrier);
+            doorRigidbody.constraints = RigidbodyConstraints.None;
+        }
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -59,6 +66,6 @@ public class LockedDoor : MonoBehaviour
         }
 
         isLocked = false;
-        Debug.Log("Door unlocked!");
+        //Debug.Log("Door unlocked!");
     }
 }

@@ -150,11 +150,18 @@ public class GuardScript : MonoBehaviour
         Ray ray = new Ray(transform.position, directionToPlayer.normalized);
 
         int layerMask = LayerMask.GetMask("Obstacle");
+        int layerMask2 = LayerMask.GetMask("Walls");
 
         if (Physics.Raycast(ray, distanceToPlayer, layerMask))
         {
             return false;
         }
+
+        if (Physics.Raycast(ray, distanceToPlayer, layerMask2))
+        {
+            return false;
+        }
+
 
         return true;
     }
