@@ -19,6 +19,7 @@ TagManager:
   - CellDoor
   - KeyAttach
   - Chain
+  - Teleport
   layers:
   - Default
   - TransparentFX
@@ -32,7 +33,7 @@ TagManager:
   - Weapon
   - Barriers
   - Obstacle
-  - 
+  - Camera
   - 
   - 
   - 
