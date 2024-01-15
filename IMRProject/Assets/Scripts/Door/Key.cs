@@ -23,8 +23,8 @@ public class Key : MonoBehaviour
         }
         else
         {
-            grabInteractable.onSelectEnter.AddListener(OnGrab);
-            grabInteractable.onSelectExit.AddListener(OnRelease);
+            grabInteractable.onSelectEntered.AddListener(OnGrab);
+            grabInteractable.onSelectExited.AddListener(OnRelease);
         }
     }
 
