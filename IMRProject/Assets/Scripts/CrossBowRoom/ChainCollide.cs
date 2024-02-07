@@ -4,19 +4,46 @@ using UnityEngine;
 
 public class ChainCollide : MonoBehaviour
 {
-   public string hitText = "Obiect țintă lovit!";
+    public string hitText = "Obiect țintă lovit!";
+    public GameObject keyPrefab;
+    public int keyIndex;
 
-    // Funcția apelată atunci când are loc o coliziune
+
     private void OnCollisionEnter(Collision collision)
     {
-        // Verificați dacă obiectul care a lovit este etichetat ca "dagger"
-        if (collision.gameObject.CompareTag("Weapon") )
+        if (collision.gameObject.CompareTag("Weapon"))
         {
-            // Afișați textul
-            Debug.Log(hitText);
+            // Display hit text if needed
+            // Debug.Log(hitText);
+            InstantiateKeyPrefab();
+            
             Destroy(gameObject);
+        }
+    }
 
-            // Puteți adăuga aici orice altă logică dorită, cum ar fi schimbarea culorii sau distrugerea obiectului țintă
+    void InstantiateKeyPrefab()
+    {
+        if (keyIndex == null)
+        {
+            keyIndex = 1000;
+        }
+
+        if (keyPrefab != null)
+        {
+            GameObject keyObj = Instantiate(keyPrefab, transform.position, Quaternion.identity);
+            Key keyScript = keyObj.GetComponent<Key>();
+            if (keyScript != null)
+            {
+                keyScript.keyNumber = keyIndex; 
+            }
+            else
+            {
+                Debug.LogError("Key script not found on the key prefab.");
+            }
+        }
+        else
+        {
+            Debug.LogError("Key prefab is not assigned in the inspector.");
         }
     }
 }
