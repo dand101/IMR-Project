@@ -64091,11 +64091,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2084521300636299894, guid: e6d9d08f218cf6242b82afcb7dbf811e, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2331833926351742764, guid: e6d9d08f218cf6242b82afcb7dbf811e, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2928911395428952320, guid: e6d9d08f218cf6242b82afcb7dbf811e, type: 3}
       propertyPath: m_Name

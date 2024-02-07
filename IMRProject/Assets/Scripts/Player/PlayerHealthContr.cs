@@ -41,7 +41,7 @@ public class PlayerContr : MonoBehaviour
             if (!swordCooldowns.ContainsKey(other.gameObject) || swordCooldowns[other.gameObject])
             {
                 number++;
-                Debug.Log("Got hit with" + number);
+                //Debug.Log("Got hit with" + number);
                 TakeDamage(25);
                 swordCooldowns[other.gameObject] = false;
                 StartCoroutine(ResetDamageCooldown(other.gameObject));
@@ -73,7 +73,7 @@ public class PlayerContr : MonoBehaviour
     public void OnFadeComplete()
     {
         SceneManager.LoadScene(sceneName);
-        animator.SetTrigger("Done");
+        //animator.SetTrigger("Done");
     }
 
 
