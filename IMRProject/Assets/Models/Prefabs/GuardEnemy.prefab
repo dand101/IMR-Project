@@ -166,6 +166,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2498160877226221617, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 977964834296676890}
+    - targetCorrespondingSourceObject: {fileID: 2498160877226221617, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8246654687669507607}
     - targetCorrespondingSourceObject: {fileID: 2498008196924940353, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5244453535736005900}
@@ -216,6 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bad3f7f76641e548b01e71c22f1a1c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  guardWeaponCollider: {fileID: 0}
   chaseDistance: 10
   attackDistance: 3
 --- !u!195 &977964834296676890
@@ -240,6 +244,24 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &8246654687669507607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3521405216876626281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineWidth: 5
+  precomputeOutline: 1
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &3521672314066485529 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2498008196924940353, guid: d736d95e1f56b154a91ffad3384cc84b, type: 3}
