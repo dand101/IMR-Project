@@ -15,6 +15,8 @@ public class MoveOutside : MonoBehaviour
 
     private void TeleportToOutsideScene()
     {
+        //SceneManager.SetActiveScene(outsideSceneName);
         SceneManager.LoadScene(outsideSceneName);
+        
     }
 }
