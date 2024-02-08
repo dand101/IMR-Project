@@ -11,7 +11,6 @@ public class ChestInteraction : XRBaseInteractable
 
         Debug.Log("Interactor type: " + interactor.GetType());
 
-        // Check if the interactor is an XRController or XRRayInteractor
         if (interactor is XRController || interactor is XRRayInteractor)
         {
             TeleportToDungeonScene();
