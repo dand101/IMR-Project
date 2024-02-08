@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 7e49333af59a2fe4ea61de930ae37580, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 854ba74cc169b4945a53974531776f8f, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -29135,7 +29135,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 683001962985200322, guid: 1b31791954d4f5849bcad936def9fd3a, type: 3}
       propertyPath: isLocked
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 683001962985200322, guid: 1b31791954d4f5849bcad936def9fd3a, type: 3}
       propertyPath: doorNumber
@@ -62696,7 +62696,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 683001962985200322, guid: 1b31791954d4f5849bcad936def9fd3a, type: 3}
       propertyPath: isLocked
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 683001962985200322, guid: 1b31791954d4f5849bcad936def9fd3a, type: 3}
       propertyPath: doorNumber
