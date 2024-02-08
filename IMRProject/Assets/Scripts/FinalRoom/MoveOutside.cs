@@ -7,7 +7,9 @@ public class MoveOutside : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Teleport"))
+        //Debug.Log(other);
+
+        if (other.CompareTag("Teleport") || other.CompareTag("Weapon"))
         {
             TeleportToOutsideScene();
         }

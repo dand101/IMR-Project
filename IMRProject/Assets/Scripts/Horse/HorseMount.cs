@@ -11,6 +11,7 @@ public class HorseMount : XRBaseInteractable
 
     private bool isMounted = false;
     private CharacterController playerController;
+    private Animator horseAnim;
 
     protected override void OnSelectEntered(XRBaseInteractor interactor)
     {
@@ -29,7 +30,7 @@ public class HorseMount : XRBaseInteractable
         horse.transform.SetParent(playermount.transform, false);
         horse.transform.localPosition = new Vector3(0f, -distanceBelowCamera, 0f);
 
-        Vector3 highPosition = mountPoint.position + Vector3.up * 0.6f; 
+        Vector3 highPosition = mountPoint.position + Vector3.up * 0.1f; 
         player.transform.position = highPosition;
 
         // Disable gravity and vertical movement for the player
@@ -45,8 +46,10 @@ public class HorseMount : XRBaseInteractable
             playerMovement.speedMultiplier= 1.5f;
         }
 
+        horseAnim = horse.GetComponent<Animator>();
+        horseAnim.SetBool("run", true);
 
-        isMounted = true;
+    isMounted = true;
     }
 
 }
