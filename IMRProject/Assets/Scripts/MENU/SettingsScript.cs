@@ -26,8 +26,8 @@ public class SettingsScript : XRBaseInteractable
     {
         if (sliderGameObject != null)
         {
-            sliderGameObject.SetActive(true);
-            objectToDisable.SetActive(false);
+            sliderGameObject.SetActive(!sliderGameObject.activeSelf);
+            objectToDisable.SetActive(!objectToDisable.activeSelf);
             Debug.Log("3213121");
         }
         else
